@@ -15,6 +15,7 @@ Task 2
 open source automation tool due to technical limitations (Many open source tools use 64bit OS and I currently have 32bit OS)
 > The process to run the automation test is simply adding the Katalon Recorder as an extension to chrome then import the file 
 in the task 2 folder. 
+> Once the file has been imported into Katalon then clicking "Play Suite" will have the whole test executed.
 
 
 
