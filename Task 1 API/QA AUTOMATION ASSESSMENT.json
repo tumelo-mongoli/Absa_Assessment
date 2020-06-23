@@ -1,0 +1,98 @@
+{
+	"variables": [],
+	"info": {
+		"name": "QA AUTOMATION ASSESSMENT",
+		"_postman_id": "e929f557-e1c5-503c-f567-713793a8daea",
+		"description": "QA AUTOMATION ASSESSMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All Breeds",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Verify - retriever is within the list\"] = responseBody.has(\"retriever\");",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://dog.ceo/api/breeds/list/all",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Retriever Breed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Verify - Golden is within the list\"] = responseBody.has(\"golden\");",
+							"",
+							"tests[\"Verify - Chesapeake is within the list\"] = responseBody.has(\"chesapeake\");",
+							"",
+							"tests[\"Verify - Curly is within the list\"] = responseBody.has(\"curly\");",
+							"",
+							"tests[\"Verify - Flatcoated is within the list\"] = responseBody.has(\"flatcoated\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://dog.ceo/api/breed/retriever/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Golden Image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Verify - Golden is within the list\"] = responseBody.has(\"golden\");",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							" ",
+							"",
+							" "
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://dog.ceo/api/breed/retriever/golden/images/random",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
